@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var name = Console.ReadLine();
+            var health = int.Parse(Console.ReadLine());
+            var maxHealth = int.Parse(Console.ReadLine());
+            var energy = int.Parse(Console.ReadLine());
+            var maxEnergy = int.Parse(Console.ReadLine());
+
+            string healthAsText = new string('|', health);
+            string healtMissing = new string('.', maxHealth - health);
+
+            string energyAsText = new string('|', energy);
+            string energyMissing = new string('.', maxEnergy - energy);
+
+            Console.WriteLine($"Name: {name}");
+            Console.WriteLine($"Health: |{healthAsText}{healtMissing}|");
+            Console.WriteLine($"Energy: |{energyAsText}{energyMissing}|");
+
+
+
+        }
+    }
+}
