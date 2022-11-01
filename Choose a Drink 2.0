@@ -1,0 +1,48 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var profession = Console.ReadLine();
+            var quantity = int.Parse(Console.ReadLine());
+
+
+            if (profession == "Athlete")
+            {
+                Console.WriteLine("Water");
+                var total = quantity * 0.7;
+                Console.WriteLine($"The {profession} has to pay {total:F2}.");
+            }
+            else if( profession == "Businessman")
+            {
+                Console.WriteLine("Coffee");
+                var total = quantity * 1;
+                Console.WriteLine($"The {profession} has to pay {total:F2}.");
+            }
+            else if (profession == "Businesswoman")
+            {
+                Console.WriteLine("Coffee");
+                var total = quantity * 1;
+                Console.WriteLine($"The {profession} has to pay {total:F2}.");
+
+            }
+            else if (profession == "SoftUni Student" )
+            {
+                Console.WriteLine("Beer");
+                var total = quantity * 1.7;
+                Console.WriteLine($"The {profession} has to pay {total:F2}.");
+            }
+            else
+            {
+                Console.WriteLine("Tea");
+                var total = quantity * 1.2;
+                Console.WriteLine($"The {profession} has to pay {total:F2}.");
+            }
+        }
+
+
+    }
+}
